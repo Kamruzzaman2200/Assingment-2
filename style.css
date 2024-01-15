@@ -1,0 +1,19 @@
+.travel {
+    color: #FF5400;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 44px;
+    font-size: 18px;
+    font-weight: 700;
+}
