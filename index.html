@@ -4,63 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <title>GlobeGlimpse Travels</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- nav section starts -->
-    <nav>
-        <h3 class="nav-title"><img src="Images/Group 40071 (2).png" alt=""> Hero <span class="travel">Travel</span></h3>
-        <ul>
-            <li><a class="travel" href="">Home</a></li>
-            <li><a href="">Packages</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-<header class="flex">
-    <section>
-    <div class="container">
-        <div class="header-title">
-            <h1 class="header-title">Explore Your Travel</h1>
-            <p class="header-des">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+    <header>
+        <div class="container_h">
+            <div class="logo_h">
+                <img src="./Images/Group 40071 (2).png" alt>
+                <h3 class="title_h">Hero<span style="color: #FF5400;"> Travel</span></h3>
+            </div>
+            <nav class="nav_h">
+                <ul class="ul_h">
+                    <li><a class="a_orange" href>Home</a></li>
+                    <li><a href>Packages</a></li>
+                    <li><a href>Testimonial</a></li>
+                    <li><a href>Blog</a></li>
+                    <li><a href>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">&#9776;</div>
         </div>
-        <div class="header-form">
-            <form class="flex">
-                <input type="text" class="form-control" placeholder="Where go">
-                <select class="form-control" name="when" id="" aria-placeholder="When">
-                    <option value="">When</option>
-                    <option value="">When</option>
-                    <option value="">When</option>
-                </select>
-                <select class="form-control" name="" id="" aria-placeholder="select-type">
-                    <option value="" aria-placeholder="select Type">select Type</option>
-                    <option value="" aria-placeholder="select Type">select Type</option>
-                    <option value="" aria-placeholder="select Type">select Type</option>
-                    <option value="" aria-placeholder="select Type">select Type</option>
+        <div class="container_all">
+            <div class="banner_h">
+                <div class="gradient_b">
+                    <div class="txt_b">
+                        <h1 class="p1">Explore Your Travel</h1>
+                        <p class="p2">Dolor sit amet consectetur. Nullam
+                            suspendisse vitae ultricies dolor adipiscing. In
+                            et odio enim ac quis sapien urna eu
+                            phasellus.</p>
+                    </div>
+                    <div class="option_b">
+                        <input type="text" name id="text" placeholder="Where go">
+                        <select name="When" id="When">
+                            <option selected disabled>When</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="02:00 PM">02:00 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                        </select>
+                        <select id="travelTypeSelector">
+                            <option selected disabled>Select Type</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Cultural">Cultural</option>
+                            <option value="Relaxation">Relaxation</option>
+                        </select>
+                        <div class="btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p class="p3">Find Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-                </select>
-                <button class="btn-primary"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbtJREFUSEvV1UuITnEYx/HPkJUMKYmd2dq4bS0kIxuXmoRSQkmR5JZZDKVoynWmJoqkRBaKjShZYCe3srOxsnArYmEWM/6P/m+deZvznqP3nYX/6jyn83++z/V3ukzx6Zpi/8oA83AYy7EkB/EaL3AeX+oGNhlgO4Yxu8TJN+zE/TqQZsB+DOWLdzGCJ9lenSLfh43Z3obbVZAioAfvMS2X51zJ5RPp/Un8wiJ8bgUpAiLavbiDLRWRPcRaDOBUXcBHLMhNfVsB6MUjvMSKuoBRzEgRTU+RjVUA5uIrfrQYhr8uiiX6iZmYlXoQz61ON77jE+bXzeAdFmMlnlcAVuXpeow1dQGncTz14B42VQCi/tGH2JmbdQEL8SH34QjOllwcxFHEZi/7lz2Ib3fgemHRLuFZtjdgD9Zl+0Lel5YDMZlUbE7jegVzSqKLybmcs4i+HcODskzKxC4m41AWu6WpN7/xCk9xLYtdCF9jB0K7DmC8GdSOXK9vEryLaXQPdhIQvm5ha8HpGfQXIe1kEH5i8wPSV3AaJdzdsNsFNPxcxa5sTMiiU4CQ+BvpX/EmSc0Eme8UoHTf/n/AH9BmShm5CxJHAAAAAElFTkSuQmCC"/>find now</button>
+    <!-- main contents  -->
 
-            </form>
+    <!-- section-1 starts here  -->
+
+    <main>
+        <section class="s1 container_all">
+            <div class="text_s1">
+                <h3 class="p4">Our Popular Tours</h3>
+                <p class="p5">Dolor sit amet consectetur. Diam volutpat
+                    neque habitasse pharetra odio sit massa. Sodales
+                    dictumst nec nibh pellentesque.</p>
+                <ol class="ol_s1">
+                    <li class="p5">Tempus euismod lacus mauris dignissim
+                        quis in ultrices. Magna nullam odio neque diam.
+                        Sociis erat at .</li>
+                    <li class="p5">Adipiscing ornare pellentesque mauris
+                        volutpat tortor vitae platea porta lacus. Lectus
+                        suspendisse nullam.</li>
+                    <li class="p5"> Accumsan eget et turpis praesent lorem
+                        egestas enim elit bibendum. Risus at in.</li>
+                </ol>
+                <p class="p6">Amet consectetur. Vulputate commodo felis
+                    molestie risus
+                    ornare nulla amet et. Libero commodo sagittis dignissim
+                    adipiscing quis. Habitant adipiscing risus natoque
+                    aliquet. Id bibendum nunc senectus semper tincidunt.
+                </p>
+                <button type="submit" class="button_primary">Read
+                    More</button>
+            </div>
+            <div class="image_s1">
+                <img src="./Images/Rectangle 4.png" alt>
+            </div>
+        </section>
+
+        <!-- section-2 starts here  -->
+
+        <section class="s2 container_all">
+
+            <h3 class="p4" style="text-align: center;">Choose Your
+                Destination</h3>
+            <br>
+            <p class="p5" style="text-align: center;">Dolor sit amet
+                consectetur. Diam volutpat neque habitasse pharetra odio sit
+                massa. <br> Sodales dictumst nec nibh pellentesque.</p>
+            <br>
+            <br>
+            <div class="grid-container">
+                <div class="container_grid g1">
+                    <img src="./Images/Rectangle 5.png" alt="Image 1">
+                    <div class="text-overlay">Maldives</div>
+                </div>
+
+                <div class="container_grid g2">
+                    <img src="./Images/Rectangle 8.png" alt="Image 2">
+                    <div class="text-overlay">Indonesia</div>
+                </div>
+                <div class="container_grid g3">
+                    <img src="./Images/Rectangle 6.png" alt="Image 2">
+                    <div class="text-overlay">Srilanka</div>
+                </div>
+                <div class="container_grid g4">
+                    <img src="./Images/Rectangle 7.png" alt="Image 2">
+                    <div class="text-overlay">North America</div>
+                </div>
+                <div class="container_grid g5">
+                    <img src="./Images/Rectangle 9.png" alt="Image 2">
+                    <div class="text-overlay">Kashmir</div>
+                </div>
+                <div class="container_grid g6">
+                    <img src="./Images/Rectangle 11.png" alt="Image 2">
+                    <div class="text-overlay">Bangladesh</div>
+                </div>
+                <div class="container_grid g7">
+                    <img src="./Images/Rectangle 10.png" alt="Image 2">
+                    <div class="text-overlay">Bandarban</div>
+                </div>
+        </section>
+        <!-- extra section start here  -->
+        <section class="s1 container_all">
+            <div class="text_s1">
+                <h3 class="p4">Places to Visit in Bangladesh</h3>
+                <p class="p5">If you're looking for the most popular tourist places in Bangladesh, you should definitely visit Cox's Bazar, located alongside the Bay of Bengal beach. It has the world's largest unbroken sea beach that stretches more than one hundred and twenty kilometers.</p>
+            </div>
+            <div class="image_s1">
+                <video controls src="Images/y2mate.com - Ride of the Legend  Coxs Bazar  Beautiful Bangladesh_1080p.mp4" width="500"></video>
+            </div>
+        </section>
+
+        <!-- section 3 start here  -->
+
+        <section class="s3 container_all">
+
+            <h3 class="p4" style="text-align: center;">Why Choose
+                Us</h3>
+            <br>
+            <p class="p5" style="text-align: center;">Dolor sit amet
+                consectetur. Diam volutpat neque habitasse pharetra odio
+                sit massa. <br> Sodales dictumst nec nibh
+                pellentesque.</p>
+            <br> <br>
+
+            <div class="card_holder">
+                <div class="card card1">
+                    <img src="./Images/icons/hotel 1.png" alt>
+                    <p class="p7">Handpicked Hotels</p>
+                    <br>
+                    <p class="p6">Amet consectetur. Vulputate commodo
+                        felis molestie risus ornare nulla amet et.
+                        Libero commodo sagittis dignissim adipiscing
+                        quis. Habitant adipiscing risus natoque aliquet.
+                    </p>
+                </div>
+                <div class="card card2">
+                    <img src="./Images/icons/map 1.png" alt>
+                    <p class="p7">World Class Service</p>
+                    <br>
+                    <p class="p6">Amet consectetur. Vulputate commodo
+                        felis molestie risus ornare nulla amet et.
+                        Libero commodo sagittis dignissim adipiscing
+                        quis. Habitant adipiscing risus natoque aliquet.
+                    </p>
+                </div>
+                <div class="card card3">
+                    <img src="./Images/icons/price-tag 1.png" alt>
+                    <p class="p7">Best Price Guarantee</p>
+                    <br>
+                    <p class="p6">Amet consectetur. Vulputate commodo
+                        felis molestie risus ornare nulla amet et.
+                        Libero commodo sagittis dignissim adipiscing
+                        quis. Habitant adipiscing risus natoque aliquet.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section 4 start here  -->
+
+        <section class="s4 container_all">
+
+            <div class="grid_s4">
+                <div class="newletter">
+                    <p class="p7">Newsletter</p>
+                    <p class="p6">Get your daily dose of travel news &
+                        tips. <br>Sign up today!</p>
+                    <hr style="color: rgba(19, 19, 24, 0.10);">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <button class="button_primary bt_s4" type="submit">Subscribe</button>
+                </div>
+                <div class="photo">
+                    <img src="./Images/Rectangle 8 (1).png" alt>
+                    <div class="save70">
+                        <p>Travel.com <br><span style="font-size: x-large; font-weight: 700;">Save up to 70%</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container_foot">
+            <div class="logo_foot">
+                <img src="./Images/Group 40071 (2).png" alt>
+                <h3 class="title_h">GlobeGlimpse<span style="color: #FF5400;"> Travel</span></h3>
+            </div>
+            <p class="p6">Lorem ipsum dolor sit amet consectetur. Nulla
+                sit viverra morbi vitae blandit orci potenti vulputate.
+                Leo erat maecenas vitae elementum ultricies nullam.
+            </p>
+
+            <div class="icon_foot">
+                <i class="fa-brands fa-twitter" style="color: skyblue;"></i><i class="fa-brands fa-facebook-f"
+                    style="color: blue;"></i><i class="fa-brands fa-square-instagram"></i><i
+                    class="fa-brands fa-github"></i>
+            </div>
+            <br>
+            <br>
+            <hr style="width: 100%; color: rgba(19, 19, 24, 0.218);">
+            <br>
+            <p class="plast">
+                2024 &copy All Rights Reserved
+            </p>
+
         </div>
 
-    </div>
-</section>
+    </footer>
 
-</header>
-<main>
-
-</main>
-<footer>
-
-</footer>
 </body>
 
 </html>
